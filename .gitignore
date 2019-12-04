@@ -1,0 +1,17 @@
+# Default ignored files
+/workspace.xml
+.idea
+*.ai
+*.swp
+*.log
+*.pdf
+*.psd
+*.sublime*
+*.save
+.editconfig
+.gitattributes
+Thumbs.db
+vendor
+uploads/*
+!uploads/.gitkeep
+
