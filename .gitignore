@@ -1,7 +1,10 @@
 # Default ignored files
 /workspace.xml
+.idea/
 .idea
+*.gitignore
 *.ai
+*.[oa]
 *.swp
 *.log
 *.pdf
