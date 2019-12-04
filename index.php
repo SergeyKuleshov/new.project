@@ -13,6 +13,8 @@ $user_name = ''; // укажите здесь ваше имя
 <body>
 <div class="page-wrapper">
 
+    <p>трям!!</p>
+
 <header class="main-header">
     <div class="main-header__container container">
         <h1 class="visually-hidden">YetiCave</h1>
@@ -34,16 +36,28 @@ $user_name = ''; // укажите здесь ваше имя
 </header>
 
 <main class="container">
-    <section class="promo">
-        <h2 class="promo__title">Нужен стафф для катки?</h2>
-        <p class="promo__text">На нашем интернет-аукционе ты найдёшь самое эксклюзивное сноубордическое и горнолыжное снаряжение.</p>
-        <ul class="promo__list">
-            <!--заполните этот список из массива категорий-->
-            <li class="promo__item promo__item--boards">
-                <a class="promo__link" href="pages/all-lots.html">Имя категории</a>
-            </li>
-        </ul>
+
+
+    <section class="promo-wrapper">
+
+        <section class="promo">
+            <h2 class="promo__title">Попьем пивка?</h2>
+            <p class="promo__text">На этом сайте ты сможешь посмотреть разные сорта бельгийского пива, а также посмотреть ближайшие события</p>
+            <ul class="promo__list">
+                <!--заполните этот список из массива категорий-->
+                <li class="promo__item promo__item--boards">
+                    <a class="promo__link" href="pages/all-lots.html">Название сорта</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="back">
+            <img src="../img/background_2.png" alt="">
+        </section>
+
     </section>
+
+
     <section class="lots">
         <div class="lots__header">
             <h2>Открытые лоты</h2>

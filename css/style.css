@@ -425,12 +425,35 @@ main.container {
   padding: 23px 10px;
 }
 
+
+
+/*Здесь провел изменения */
+
+
+
 /* Главная. Промо блок */
 
-.promo {
-  padding: 58px 0 35px;
-  background: url("../img/promo-bg.png") 3px 17px no-repeat;
+.promo-wrapper {
+  display: flex;
 }
+
+/*.promo {*/
+/*  padding: 58px 0 35px;*/
+/*  !*background: url("../img/promo-bg.png") 3px 17px no-repeat;*!*/
+/*  !*background: url("../img/belgian_beer.png") 3px 17px no-repeat;*!*/
+/*  background: url("../img/background_2.png") 3px 17px no-repeat;*/
+/*}*/
+
+
+
+.back {
+  max-width: 540px;
+  min-height: 360px;
+}
+
+
+
+
 
 .promo__title {
   margin: 0;
