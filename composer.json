@@ -1,0 +1,13 @@
+{
+    "name": "sergei/topbier.local",
+    "description": "I will try to understand the basics of creating sites",
+    "authors": [
+        {
+            "name": "Sergei Kuleshov",
+            "email": "kilinserg89@mail.ru"
+        }
+    ],
+    "require": {
+        "imagine/imagine": "^1.2"
+    }
+}
