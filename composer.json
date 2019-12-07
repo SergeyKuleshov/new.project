@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-        "imagine/imagine": "^1.2"
+        "imagine/imagine": "^1.2",
+        "funct/funct": "^1.5"
     }
 }

@@ -1,6 +1,4 @@
 <?php
-require_once 'vendor/autoload.php';
-
 //$imagine = new Imagine();
 //
 //$pic = $imagine->open('../img/background_2.png');
