@@ -1,7 +1,19 @@
 <?php
+namespace NewProject\Index;
+//"require_once" - подключает файлы. Если в подключаемом файле есть вывод 
+//функции, например какой-нибудь текст print'ом, то он выведится, но чтобы 
+//вызвать функцию в этот файл эту функцию нужно указать в "use", через "namespace"
+//того файла в котором эта функция находится.
+
 require_once 'vendor/autoload.php';
 require_once 'function.php';
 require_once 'test_funct.php';
+
+
+use function NewProject\Func\sum;
+
+print(sum(7, 2));
+
 
 $is_auth = rand(0, 1);
 $user_name = ''; // укажите здесь ваше имя
@@ -18,7 +30,6 @@ $user_name = ''; // укажите здесь ваше имя
 <div class="page-wrapper">
 
     <p>трям!!</p>
-
 <header class="main-header">
     <div class="main-header__container container">
         <h1 class="visually-hidden">YetiCave</h1>

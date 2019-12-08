@@ -1,4 +1,6 @@
 <?php
+namespace NewProject\Func;
+
 //$imagine = new Imagine();
 //
 //$pic = $imagine->open('../img/background_2.png');
@@ -10,5 +12,10 @@
 //
 //$pic->paste($watermark, $bottomRight);
 //$pic->save('../img/background_2.png');
+
+function sum($a, $b) {
+	$result = $a + $b;
+	return $result; 
+}
 
 print("fdfd");
