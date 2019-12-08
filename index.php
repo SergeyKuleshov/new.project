@@ -11,9 +11,9 @@ require_once 'test_funct.php';
 
 
 use function NewProject\Func\sum;
+use function funct;
 
-print(sum(7, 2));
-
+print(" <  " . sum(7, 2) . "функция 'sum' вызванная из файла 'func' в файл 'index.php'" . "  >" . PHP_EOL);
 
 $is_auth = rand(0, 1);
 $user_name = ''; // укажите здесь ваше имя

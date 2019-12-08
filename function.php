@@ -18,4 +18,4 @@ function sum($a, $b) {
 	return $result; 
 }
 
-print("fdfd");
+print("   <" . "Это сообщение вызвано из файла 'function.php' по средствам 'require_once'" . ">   ");
