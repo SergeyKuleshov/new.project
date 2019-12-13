@@ -30,6 +30,7 @@ CREATE TABLE `beer` (
   `brewery_id` int(11) DEFAULT NULL,
   `type_of_package_id` int(11) DEFAULT NULL,
   `volume_id` int(11) DEFAULT NULL,
+  `picture_path` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -40,7 +41,7 @@ CREATE TABLE `beer` (
 
 LOCK TABLES `beer` WRITE;
 /*!40000 ALTER TABLE `beer` DISABLE KEYS */;
-INSERT INTO `beer` VALUES (1,'Chimay Brune Red','1',2,5,1,2),(2,'Westmalle Dubbel','1',2,3,1,2),(3,'Rochefort 6','1',2,7,1,2),(4,'La Trappe Dubbel','1',2,2,1,2),(5,'St. Bernardus 6','1',2,8,1,2),(6,'St. Bernardus 8','1',2,8,1,2),(7,'Achel Bruin','1',2,1,1,2),(8,'Corsendonk Pater Dubbel','1',2,9,1,2),(9,'Orval','3',2,6,1,2),(10,'Tempelier Corsendonk','3',2,9,1,2),(11,'La Trappe Isid\'or','3',2,2,1,2),(12,'Achel Blond','3',2,1,1,2);
+INSERT INTO `beer` VALUES (1,'Chimay Brune Red','1',2,5,1,2,'img/chimay-red.jpeg'),(2,'Westmalle Dubbel','1',2,3,1,2,'img/westmal-dubbel.jpeg'),(3,'Rochefort 6','1',2,7,1,2,'img/westmal-dubbel.jpeg'),(4,'La Trappe Dubbel','1',2,2,1,2,'img/westmal-dubbel.jpeg'),(5,'St. Bernardus 6','1',2,8,1,2,'img/westmal-dubbel.jpeg'),(6,'St. Bernardus 8','1',2,8,1,2,'img/westmal-dubbel.jpeg'),(7,'Achel Bruin','1',2,1,1,2,'img/westmal-dubbel.jpeg'),(8,'Corsendonk Pater Dubbel','1',2,9,1,2,'img/westmal-dubbel.jpeg'),(9,'Orval','3',2,6,1,2,'img/westmal-dubbel.jpeg'),(10,'Tempelier Corsendonk','3',2,9,1,2,'img/westmal-dubbel.jpeg'),(11,'La Trappe Isid\'or','3',2,2,1,2,'img/westmal-dubbel.jpeg'),(12,'Achel Blond','3',2,1,1,2,'img/westmal-dubbel.jpeg');
 /*!40000 ALTER TABLE `beer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -224,4 +225,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-13 12:28:01
+-- Dump completed on 2019-12-13 13:46:17
