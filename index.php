@@ -18,6 +18,47 @@ print(" <  " . sum(7, 2) . "функция 'sum' вызванная из фай�
 
 $is_auth = rand(0, 1);
 $user_name = 'Сергей Кулешов'; // укажите здесь ваше имя
+
+$style = ["Dubbel", "Tripel", "Belgian Ale", "Quadrupel", "Brown Ale", "IPA"];
+
+$beer = [
+	[
+	"title" => "Chimay Red",
+	"style" => "Dubbel",
+	"price" => 180,
+	"url_picture" => "img/chimay-red.jpeg"
+	],
+	[
+	"title" => "Westmalle",
+        "style" => "Dubbel",
+        "price" => 180,
+        "url_picture" => "img/westmal-dubbel.jpeg"
+	],
+	[
+        "title" => "Chimay Red",
+        "style" => "Dubbel",
+        "price" => 250,
+        "url_picture" => "img/chimay-red.jpeg"
+        ],
+	[
+        "title" => "Chimay Red",
+        "style" => "Dubbel",
+        "price" => 220,
+        "url_picture" => "img/chimay-red.jpeg"
+        ],
+	[
+        "title" => "Chimay Red",
+        "style" => "Dubbel",
+        "price" => 190,
+        "url_picture" => "img/chimay-red.jpeg"
+        ],
+	[
+        "title" => "Chimay Red",
+        "style" => "Dubbel",
+        "price" => 175,
+        "url_picture" => "img/chimay-red.jpeg"
+        ]
+];
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -77,9 +118,15 @@ $user_name = 'Сергей Кулешов'; // укажите здесь ваш�
             <p class="promo__text">На этом сайте ты сможешь посмотреть разные сорта бельгийского пива, а также посмотреть ближайшие события</p>
             <ul class="promo__list">
                 <!--заполните этот список из массива категорий-->
+
+		<?php foreach ($style as $value): ?>
+
                 <li class="promo__item promo__item--boards">
-                    <a class="promo__link" href="pages/all-lots.html">Название сорта</a>
+                    <a class="promo__link" href="pages/all-lots.html"><?= $value; ?></a>
                 </li>
+
+		<?php endforeach; ?>
+
             </ul>
         </section>
 
@@ -96,17 +143,21 @@ $user_name = 'Сергей Кулешов'; // укажите здесь ваш�
         </div>
         <ul class="lots__list">
             <!--заполните этот список из массива с товарами-->
+
+
+	    <?php foreach ($beer as $key => $value): ?>
+
             <li class="lots__item lot">
                 <div class="lot__image">
-                    <img src="" width="350" height="260" alt="">
+                    <img src="<?= $value['url_picture']; ?> " width="350" height="260" alt="">
                 </div>
                 <div class="lot__info">
-                    <span class="lot__category">Название категории</span>
-                    <h3 class="lot__title"><a class="text-link" href="pages/lot.html">Название товара</a></h3>
+                    <span class="lot__category"><?= $value["style"]; ?></span>
+                    <h3 class="lot__title"><a class="text-link" href="pages/lot.html"><?= $value["title"]; ?></a></h3>
                     <div class="lot__state">
                         <div class="lot__rate">
-                            <span class="lot__amount">Стартовая цена</span>
-                            <span class="lot__cost">цена<b class="rub">р</b></span>
+                            <!-- <span class="lot__amount">Стартовая цена</span> -->
+                            <span class="lot__cost"> <?= $value["price"]; ?> <b class="rub">р</b></span>
                         </div>
                         <div class="lot__timer timer">
                             12:23
@@ -114,6 +165,8 @@ $user_name = 'Сергей Кулешов'; // укажите здесь ваш�
                     </div>
                 </div>
             </li>
+
+	    <?php endforeach; ?>
         </ul>
     </section>
 </main>
@@ -123,9 +176,15 @@ $user_name = 'Сергей Кулешов'; // укажите здесь ваш�
     <nav class="nav">
         <ul class="nav__list container">
             <!--заполните этот список из массива категорий-->
+
+
+	    <?php foreach ($style as $value): ?>
+
             <li class="nav__item">
-                <a href="pages/all-lots.html">Название категории</a>
+                <a href="pages/all-lots.html"><?= $value; ?></a>
             </li>
+
+	    <?php endforeach; ?>
         </ul>
     </nav>
     <div class="main-footer__bottom container">
