@@ -19,3 +19,11 @@ function sum($a, $b) {
 }
 
 print("   <" . "Это сообщение вызвано из файла 'function.php' по средствам 'require_once'" . ">   ");
+
+
+function formatting_number($number) {
+    $number = ceil($number);
+    $number = number_format($number);
+    $number .= '₽';
+    return $number;
+}
