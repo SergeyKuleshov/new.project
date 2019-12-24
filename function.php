@@ -1,5 +1,5 @@
 <?php
-namespace NewProject\Func;
+//namespace NewProject\Func;
 
 //$imagine = new Imagine();
 //
@@ -18,7 +18,7 @@ function sum($a, $b) {
 	return $result; 
 }
 
-print("   <" . "Это сообщение вызвано из файла 'function.php' по средствам 'require_once'" . ">   ");
+//print("   <" . "Это сообщение вызвано из файла 'function.php' по средствам 'require_once'" . ">   ");
 
 
 function formatting_number($number) {
