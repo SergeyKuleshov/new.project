@@ -10,6 +10,7 @@
 //того файла в котором эта функция находится.
 
 //require_once 'vendor/autoload.php';
+
 require_once 'function.php';
 //require_once 'test_funct.php';
 
