@@ -1,6 +1,9 @@
 <?php
 //namespace NewProject\Index;
 
+//use function Topbier\Function\formatting_number;
+//use function Topbier\Function\include_template;
+
 //"require_once" - подключает файлы. Если в подключаемом файле есть вывод 
 //функции, например какой-нибудь текст print'ом, то он выведится, но чтобы 
 //вызвать функцию в этот файл эту функцию нужно указать в "use", через "namespace"
@@ -63,22 +66,22 @@ $beer = [
 ];
 
 
-function include_template($name, array $data = []) {
-$name = 'templates/' . $name;
-$result = '';
-
-if (!is_readable($name)) {
-return $result;
-}
-
-ob_start();
-extract($data);
-require $name;
-
-$result = ob_get_clean();
-
-return $result;
-}
+//function include_template($name, array $data = []) {
+//$name = 'templates/' . $name;
+//$result = '';
+//
+//if (!is_readable($name)) {
+//return $result;
+//}
+//
+//ob_start();
+//extract($data);
+//require $name;
+//
+//$result = ob_get_clean();
+//
+//return $result;
+//}
 
 
 //function formatting_number($number) {
