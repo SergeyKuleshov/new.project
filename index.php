@@ -1,13 +1,13 @@
 <?php
-<<<<<<< HEAD
+
 //phpinfo();
 namespace NewProject\Index;
-=======
+
 //namespace NewProject\Index;
 
 //use function Topbier\Function\formatting_number;
 //use function Topbier\Function\include_template;
->>>>>>> d90c41318e65a9b16e70db2309e34bced773bbdb
+
 
 //"require_once" - подключает файлы. Если в подключаемом файле есть вывод
 //функции, например какой-нибудь текст print'ом, то он выведится, но чтобы
