@@ -37,37 +37,43 @@ $beer = [
 	"title" => "Chimay Red",
 	"style" => "Dubbel",
 	"price" => 180,
-	"url_picture" => "img/chimay-red.jpeg"
+	"url_picture" => "img/chimay-red.jpeg",
+	"expiration_date" => "2020-01-02"
 	],
 	[
 	"title" => "Westmalle",
         "style" => "Dubbel",
         "price" => 180,
-        "url_picture" => "img/westmal-dubbel.jpeg"
+        "url_picture" => "img/westmal-dubbel.jpeg",
+	"expiration_date" => "2020-03-02"
 	],
 	[
         "title" => "Chimay Red",
         "style" => "Dubbel",
         "price" => 250,
-        "url_picture" => "img/chimay-red.jpeg"
+        "url_picture" => "img/chimay-red.jpeg",
+	"expiration_date" => "2020-03-04"
         ],
 	[
         "title" => "Chimay Red",
         "style" => "Dubbel",
         "price" => 220,
-        "url_picture" => "img/chimay-red.jpeg"
+        "url_picture" => "img/chimay-red.jpeg",
+	"expiration_date" => "2020-01-07"
         ],
 	[
         "title" => "Chimay Red",
         "style" => "Dubbel",
         "price" => 190,
-        "url_picture" => "img/chimay-red.jpeg"
+        "url_picture" => "img/chimay-red.jpeg",
+	"expiration_date" => "2020-01-10"
         ],
 	[
         "title" => "Chimay Red",
         "style" => "Dubbel",
         "price" => 175,
-        "url_picture" => "img/chimay-red.jpeg"
+        "url_picture" => "img/chimay-red.jpeg",
+	"expiration_date" => "2019-12-31"
         ]
 ];
 

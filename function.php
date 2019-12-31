@@ -15,7 +15,7 @@
 
 function sum($a, $b) {
 	$result = $a + $b;
-	return $result; 
+	return $result;
 }
 
 //print("   <" . "Это сообщение вызвано из файла 'function.php' по средствам 'require_once'" . ">   ");
@@ -46,3 +46,28 @@ $result = ob_get_clean();
 return $result;
 }
 
+
+
+function get_dt_range($dt_finish) {
+
+  $hours_and_minutes = [];
+
+  $dt_finish = date_create($dt_finish);
+  $dt_now = date_create("now");
+
+  $dt_diff = date_diff($dt_finish, $dt_now);
+
+
+  $day = date_interval_format($dt_diff, "%a");
+  $hours = date_interval_format($dt_diff, "%h") + $day * 24;
+  $hours_and_minutes[] = $hours;
+
+  $minutes = date_interval_format($dt_diff, "%i");
+  $hours_and_minutes[] = $minutes;
+
+  if ($dt_finish < $dt_now) {
+    return "время истекло";
+  }
+
+  return $hours_and_minutes;
+}
